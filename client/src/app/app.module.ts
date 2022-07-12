@@ -20,6 +20,7 @@ import { NavdashComponent } from './components/navdash/navdash.component';
 import { DataService } from './services/data.service';
 import { AuthGuard } from './services/auth.guard';
 import { TokenService } from './services/token.service';
+import { BookingComponent } from './components/booking/booking.component';
 
  export const router:Routes = [
   {path: '', component:HomeComponent}, //redirectTo, pathMatch
@@ -37,7 +38,8 @@ import { TokenService } from './services/token.service';
     DashboardComponent,
     DashmenuComponent,
     MenuconfigComponent,
-    NavdashComponent
+    NavdashComponent,
+    BookingComponent
   ],
   imports: [
     BrowserModule,
