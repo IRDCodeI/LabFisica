@@ -50,8 +50,4 @@ export class LoginComponent implements OnInit {
       this.dataservice.dataUser = new Users();
     }
   }
-
-  show(){
-    console.log(this.status);
-  }
 }

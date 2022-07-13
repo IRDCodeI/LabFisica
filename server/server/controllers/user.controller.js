@@ -30,24 +30,15 @@ userController.getDash = async(req, res) => {
     res.json('status: Dashboard')
 }
 
-/* userController.getUser = async(req, res) => {
-    const {id} = req.params;
-    const user = await User.find({email: `${id}`});
-    res.json(user);
-};
+userController.updateUser = async(req, res) => {
+    const {email, password} = req.body;
+    const user = req.body;
+    
+    const getUser = await User.findOne({email});
+    await User.findByIdAndUpdate({_id: getUser._id}, {$set: user}, {new: true});
 
-userController.editUser = async(req, res) => {
-    const {id} = req.params;
-    const user = {
-        username: req.body.username,
-        user: req.body.user,
-        password: req.body.password,
-        email: req.body.email,
-        type: req.body.type
-    }
-    await User.findByIdAndUpdate(id, {$set:user}, {new:true});
-    res.json('status: Gasto actualizado');
-} */
+    res.status(200).json('status: Actualizado');
+};
 
 /* userController.getUserId = async(req,res) => {      
     //console.log(req.params.id);

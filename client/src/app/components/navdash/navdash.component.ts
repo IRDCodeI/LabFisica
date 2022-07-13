@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { DataService } from 'src/app/services/data.service';
 @Component({
   selector: 'app-navdash',
   templateUrl: './navdash.component.html',
@@ -7,7 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavdashComponent implements OnInit {
 
-  constructor() { }
+  constructor(protected dataService: DataService) {
+   }
 
   ngOnInit(): void {
   }

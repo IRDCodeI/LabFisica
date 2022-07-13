@@ -34,6 +34,11 @@ export class DataService {
 
   logOut(){
     localStorage.removeItem('token');
-    this.router.navigate(['/login'])
+    console.log('here')
+    this.router.navigate(['/login']);
+  }
+
+  updateUser(User: Users){
+    return this.http.put(this.URL_API + '/dashboard/put', User);
   }
 }

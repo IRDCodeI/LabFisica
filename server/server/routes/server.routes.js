@@ -10,6 +10,7 @@ const { request } = require('express');
 router.get('/', user.getUsers);
 router.post('/register', user.registerUser);
 router.post('/login', user.loginUser);
+router.put('/dashboard/put', verifyToken, user.updateUser);
 router.get('/dashboard', verifyToken, user.getDash)
 //router.get('/user/:id', user.getUser);
 //router.put('/user/:id', user.editUser)
