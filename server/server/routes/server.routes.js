@@ -1,8 +1,8 @@
 //*Exportacion para rutas/accion
 const express = require('express');
-const { JsonWebTokenError } = require('jsonwebtoken');
 const router = express.Router();
 const user = require('../controllers/user.controller');
+const service = require('../controllers/service.controller');
 const jwt = require('jsonwebtoken');
 const { request } = require('express');
 
@@ -12,11 +12,10 @@ router.post('/register', user.registerUser);
 router.post('/login', user.loginUser);
 router.put('/dashboard/put', verifyToken, user.updateUser);
 router.get('/dashboard', verifyToken, user.getDash)
-//router.get('/user/:id', user.getUser);
-//router.put('/user/:id', user.editUser)
-//router.get('/:id', user.getUser);
-//router.put('/:id', user.editUser);
-//router.delete('/:id', user.deleteUser);
+
+//?Rutas de accion Servicios
+router.get('/services', service.getServices)
+
 
 module.exports = router; 
 
