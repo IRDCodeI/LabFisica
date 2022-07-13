@@ -4,28 +4,33 @@ import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
+
 /* Componentes */
 import { AppComponent } from './components/app/app.component';
-import { HeaderComponent } from './components/header/header.component';
-import { FooterComponent } from './components/footer/footer.component';
-import { BodyComponent } from './components/body/body.component';
+import { HeaderComponent } from './components/guest/header/header.component';
+import { FooterComponent } from './components/guest/footer/footer.component';
+import { BodyComponent } from './components/guest/body/body.component';
 import { HomeComponent } from './views/home/home.component';
 import { LoginComponent } from './views/login/login.component';
 import { DashboardComponent } from './views/dashboard/dashboard.component';
-import { DashmenuComponent } from './components/dashmenu/dashmenu.component';
-import { MenuconfigComponent } from './components/menuconfig/menuconfig.component';
-import { NavdashComponent } from './components/navdash/navdash.component';
+import { DashmenuComponent } from './components/costumer/dashmenu/dashmenu.component';
+import { MenuconfigComponent } from './components/costumer/menuconfig/menuconfig.component';
+import { NavdashComponent } from './components/costumer/navdash/navdash.component';
+import { BookingComponent } from './components/costumer/booking/booking.component';
 
 /* Servicios */
 import { DataService } from './services/data.service';
 import { AuthGuard } from './services/auth.guard';
 import { TokenService } from './services/token.service';
-import { BookingComponent } from './components/booking/booking.component';
+import { FindservicesComponent } from './components/costumer/findservices/findservices.component';
+import { ServicesComponent } from './components/guest/services/services.component';
 
  export const router:Routes = [
   {path: '', component:HomeComponent}, //redirectTo, pathMatch
   {path: 'login', component:LoginComponent},
-  {path: 'dashboard', component: DashboardComponent, canActivate: [AuthGuard]}
+  {path: 'dashboard', component: DashboardComponent, canActivate: [AuthGuard]},
+  {path: 'dashboard/service', component: FindservicesComponent},
+  {path: 'services', component: ServicesComponent}
 ];
 @NgModule({
   declarations: [
@@ -39,7 +44,9 @@ import { BookingComponent } from './components/booking/booking.component';
     DashmenuComponent,
     MenuconfigComponent,
     NavdashComponent,
-    BookingComponent
+    BookingComponent,
+    FindservicesComponent,
+    ServicesComponent
   ],
   imports: [
     BrowserModule,
