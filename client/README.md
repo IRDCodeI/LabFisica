@@ -34,38 +34,38 @@
 1. Julio 1:   Afiche en Canva con: requerimientos. Casos de Uso. Mapa de navegación, Home.  Presentación app web Home en Angular   4 PUNTOS
 
 
-     - Prototipo   1.5 puntos
-     - Mapa Navegación 1 punto
-     - Home 1.5 puntos
+     - Prototipo   1.5 puntos [x]
+     - Mapa Navegación 1 punto  [x]
+     - Home 1.5 puntos  [x]
       
       
 2. Julio 8: Afiche en Canva con: modelo BD,  diagrama componentes .  Presentación app web con un perfil usuario cliente y actualización de datos.  Como invitado puedo consultar los servicios ofertados que están guardados en la BD   4 PUNTOS
 
 
-     - Modelo BD     0.5
-     - Diagrama componentes   1
-     - Logeo como usuario cliente     1
-     - Actualización de datos  1
-     - Consulta de todos los servicios   0.5
+     - Modelo BD     0.5  [x]
+     - Diagrama componentes   1 [-] "Mejorar Diagrama - Implementar MVC"
+     - Logeo como usuario cliente     1 [-] "Mejorar Seguridad - Implementar encriptacion"
+     - Actualización de datos  1  [x]
+     - Consulta de todos los servicios   0.5  [x]
       
 
 3. Julio 16:  Presentación app web con dos perfiles usuario  4 PUNTOS
 
 
-     - Registro de un nuevo cliente   0.5
-     - Logeo al sistema como cliente  0.5
-     - Inscripción, reserva de laboratorio, registro de viaje, registro en proyecto o en investigación, etc.  0.5
-     - Cambiar clave 0.5
-     - Logeo al sistema como administrador 0.5
-     - Registro de un nuevo servicio 0.5
-     - Eliminación de un servicio 0.5
-     - Cerrar sesión 0.5
+     - Registro de un nuevo cliente   0.5 [x]
+     - Logeo al sistema como cliente  0.5 [x]
+     - Inscripción, reserva de laboratorio, registro de viaje, registro en proyecto o en investigación, etc.  0.5 [ ]
+     - Cambiar clave 0.5  [x]
+     - Logeo al sistema como administrador 0.5 [ ]
+     - Registro de un nuevo servicio 0.5  [ ]
+     - Eliminación de un servicio 0.5 [ ]
+     - Cerrar sesión 0.5 [x]
       
       
 4. Presentación app web final.  PDF documentación final: requerimientos , casos de uso, mapa navegación, modelo BD, diagrama secuencia, diagrama componentes, diagrama despliegue y pruebas   
 
 
-     - Documentación 2 puntos
-     - Pruebas 2 puntos
-     - App Web 4 puntos
+     - Documentación 2 puntos [ ]
+     - Pruebas 2 puntos [ ]
+     - App Web 4 puntos [ ]
 
