@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule, Routes } from '@angular/router';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, FormControl } from '@angular/forms';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 
@@ -56,7 +56,7 @@ import { ServicesComponent } from './components/guest/services/services.componen
     FormsModule
   ],
   exports: [RouterModule],
-  providers: [DataService, AuthGuard, {
+  providers: [DataService, FormControl, AuthGuard, {
     provide: HTTP_INTERCEPTORS,
     useClass: TokenService,
     multi: true

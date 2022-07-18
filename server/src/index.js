@@ -9,7 +9,7 @@ const {mongoose} = require('./database');
 app.set('puerto', process.env.PORT|| 3000);
 app.use(express.json());
 app.use(cors({origin: 'http://localhost:4200'}));
-app.use('/api/users', routes);
+app.use('/api/lab', routes);
 
 //TODO: Inicio de API-REST
 app.listen(app.get('puerto'));
