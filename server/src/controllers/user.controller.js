@@ -4,7 +4,8 @@ const bycript = require("bcryptjs");
 const userController = {};
 
 userController.getUsers = async (req, res) => {
-    const user = await User.find();
+    const {email} = req.params;
+    const user = await User.findOne({email});
     res.json(user);
 };
 

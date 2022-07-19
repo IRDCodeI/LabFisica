@@ -17,12 +17,17 @@ export class DataService {
     this.dataUser = new Users();
   }
 
+  getUSer(email: string){
+    return this.http.get<any>(this.URL_API + `/user/${email}`);
+  }
+
   registerUser(User: Users) {
     User.typeUser = "cliente";
     return this.http.post<any>(this.URL_API + '/user/register', User);
   }
 
   loginUser(User: Users) {
+    localStorage.setItem('email', User.email);
     return this.http.post<any>(this.URL_API + '/user/login', User);
   }
 
@@ -36,7 +41,7 @@ export class DataService {
 
   logOut() {
     localStorage.removeItem('token');
-    console.log('here')
+    localStorage.removeItem('email');
     this.router.navigate(['/login']);
   }
 

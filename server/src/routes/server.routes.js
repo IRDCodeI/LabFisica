@@ -11,7 +11,7 @@ const { request } = require('express');
 const { getReservations } = require('../controllers/reservations.controller');
 
 //?Rutas de accion Usuario
-router.get('/', user.getUsers);
+router.get('/user/:email', user.getUsers);
 router.post('/user/register', user.registerUser);
 router.post('/user/login', user.loginUser);
 router.put('/user/dashboard/put', verifyToken, user.updateUser);

@@ -20,8 +20,8 @@
             </svg>
           </div>
           <div class="grow ml-3">
-            <span class="text-sm font-semibold text-blue-600">Usuario</span>
-            <span class="text-xs font-semibold ml-12">Cliente</span>
+            <span class="text-sm font-semibold text-blue-600">{{username}}</span>
+            <span class="text-xs font-semibold ml-12">{{typeUser}}</span>
           </div>
         </div>
       </a>
@@ -248,7 +248,11 @@
         </ul>
       </li>
     </ul>
-    <hr class="my-2" />
+    <div *ngIf="typeUser != 'admin'; else adminCase">
+
+    </div>
+    <ng-template #adminCase>
+      <hr class="my-2" />
     <ul class="relative px-1">
       <li class="relative">
         <div
@@ -326,6 +330,7 @@
         </ul>
       </li>
     </ul>
+    </ng-template>
     <div class="text-center bottom-0 absolute w-full">
       <hr class="m-0" />
       <p class="py-2 text-sm text-gray-700">Menu de Opciones</p>
