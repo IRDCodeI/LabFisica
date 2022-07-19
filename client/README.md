@@ -44,7 +44,7 @@
 
      - Modelo BD     0.5  :white_check_mark:
      - Diagrama componentes   1 :large_blue_diamond: "Mejorar Diagrama - Implementar MVC"
-     - Logeo como usuario cliente     1 :large_blue_diamond: "Mejorar Seguridad - Implementar encriptacion"
+     - Logeo como usuario cliente     1 :white_check_mark: 
      - Actualización de datos  1  :white_check_mark:
      - Consulta de todos los servicios   0.5  :white_check_mark:
       
