@@ -3,7 +3,6 @@ import { NgForm } from '@angular/forms';
 import { Users } from 'src/app/models/user/users';
 import { DataService } from 'src/app/services/data.service';
 import { Router } from '@angular/router';
-import { Subject } from 'rxjs';
 
 //import { Usuario } from 'src/interfaces/userLogin';
 @Component({

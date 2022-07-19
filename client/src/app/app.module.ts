@@ -1,9 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { RouterModule, Routes } from '@angular/router';
-import { FormsModule, FormControl } from '@angular/forms';
+import { RouterModule} from '@angular/router';
+import { FormsModule} from '@angular/forms';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
-import { ReactiveFormsModule } from '@angular/forms';
 
 /* Componentes */
 import { AppComponent } from './components/app/app.component';
@@ -17,21 +16,19 @@ import { DashmenuComponent } from './components/costumer/dashmenu/dashmenu.compo
 import { MenuconfigComponent } from './components/costumer/menuconfig/menuconfig.component';
 import { NavdashComponent } from './components/costumer/navdash/navdash.component';
 import { BookingComponent } from './components/costumer/booking/booking.component';
+import { FindservicesComponent } from './components/costumer/findservices/findservices.component';
+import { ServicesComponent } from './components/guest/services/services.component';
 
 /* Servicios */
 import { DataService } from './services/data.service';
 import { AuthGuard } from './services/auth.guard';
 import { TokenService } from './services/token.service';
-import { FindservicesComponent } from './components/costumer/findservices/findservices.component';
-import { ServicesComponent } from './components/guest/services/services.component';
 
- export const router:Routes = [
-  {path: '', component:HomeComponent}, //redirectTo, pathMatch
-  {path: 'login', component:LoginComponent},
-  {path: 'dashboard', component: DashboardComponent, canActivate: [AuthGuard]},
-  {path: 'dashboard/service', component: FindservicesComponent},
-  {path: 'services', component: ServicesComponent}
-];
+/* Modulos */
+import { AppRoutingModule } from './routes/app-routing.module';
+import { BookingDComponent } from './components/costumer/booking-d/booking-d.component';
+import { HomedashComponent } from './components/costumer/homedash/homedash.component';
+import { ServiceconfigComponent } from './components/admin/serviceconfig/serviceconfig.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -46,17 +43,19 @@ import { ServicesComponent } from './components/guest/services/services.componen
     NavdashComponent,
     BookingComponent,
     FindservicesComponent,
-    ServicesComponent
+    ServicesComponent,
+    BookingDComponent,
+    HomedashComponent,
+    ServiceconfigComponent
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(router),
     HttpClientModule,
-    ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    AppRoutingModule
   ],
   exports: [RouterModule],
-  providers: [DataService, FormControl, AuthGuard, {
+  providers: [DataService, AuthGuard, {
     provide: HTTP_INTERCEPTORS,
     useClass: TokenService,
     multi: true

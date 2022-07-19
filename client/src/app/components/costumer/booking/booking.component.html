@@ -1,102 +1,110 @@
-<div class="px-6 py-12 md:px-12 bg-gray-100 text-gray-800 lg:text-left">
-  <div class="container mx-auto xl:px-32">
-    <div class="grid lg:grid-cols-2 gap-12">
-      <div class="mt-12 lg:mt-0">
+<app-navdash></app-navdash>
+<div class="flex w-screen">
+  <app-dashmenu></app-dashmenu>
+  <div class="w-full">
 
-        <h1 class="titulo1">Reservaciones Internas/Externas</h1>
+    <div class="px-6 py-12 md:px-12 bg-gray-100 text-gray-800 lg:text-left">
+      <div class="container mx-auto xl:px-32">
+        <div class="grid lg:grid-cols-2 gap-12">
+          <div class="mt-12 lg:mt-0">
+
+            <h1 class="titulo1">Reservaciones Internas/Externas</h1>
 
 
-        <br>
-        <br>
-          <div class="btn-group">
-            <a href="#" class="btn btn-primary active" aria-current="page">Reserva de laboratorios</a>
-            <a href="#" class="btn btn-primary">Reserva de Equipos</a>
+            <br>
+            <br>
+              <div class="btn-group">
+                <a href="#" class="btn btn-primary active" aria-current="page">Reserva de laboratorios</a>
+                <a href="#" class="btn btn-primary">Reserva de Equipos</a>
+              </div>
+            <br>
+            <br>
+            <br>
+            <div class="formulario">
+            <form class="row g-3">
+
+                <!-- NOMBRE Y APELLIDO -->
+                <div class="input-group">
+                  <span class="input-group-text" style="font-size: 20px;">Nombre y Apellido</span>
+                  <input type="text" aria-label="First name" class="form-control">
+                  <input type="text" aria-label="Last name" class="form-control">
+                </div>
+
+                <!--FECHA DE INICIO-->
+                <div class="col-6">
+                  <label for="start" class="form-label" style="font-size: 20px"> Fecha de Inicio</label>
+                  <input type="date" class="form-control" id="start" value="2022-07-22" min="2022-07-10" max="2023-01-31">
+                </div>
+
+                <!-- ACTIVIDAD -->
+              <div class="col-6">
+                <label for="inputActividad" class="form-label" style="font-size: 20px">Actividad</label>
+                <input type="text" class="form-control" id="inputActividad" placeholder="">
+              </div>
+
+                <!-- FECHA DE FINALIZACION -->
+              <div class="col-6">
+                <label for="start" class="form-label" style="font-size: 20px"> Fecha de Finalización</label>
+                <input type="date" class="form-control" id="start" value="2022-07-22" min="2022-07-10" max="2023-01-31">
+              </div>
+
+                <!-- RESPONSABLE -->
+              <div class="col-6">
+                <label for="inputActividad" class="form-label" style="font-size: 20px">Responsable</label>
+                <input type="text" class="form-control" id="inputActividad" placeholder="">
+              </div>
+
+                <!-- TIPO DE RESERVA -->
+                <div class="col-6">
+                  <label for="inputState" class="form-label" style="font-size: 20px">Tipo de Reserva</label>
+                  <select id="inputState" class="form-select">
+                    <option selected>Externa</option>
+                    <option>Interna</option>
+                  </select>
+                </div>
+
+                <!-- PARTICIPANTES -->
+              <div class="col-auto">
+                <label for="inputState" class="form-label" style="font-size: 20px">Participantes</label>
+                <select id="inputState" class="form-select">
+                  <option selected>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                  <option>6</option>
+                  <option>7</option>
+                  <option>8</option>
+                  <option>9</option>
+                  <option>10</option>
+                </select>
+              </div>
+
+                <!-- OBSERVACIONES -->
+              <div class="form-floating">
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                <label for="floatingTextarea">Observaciones</label>
+              </div>
+
+                <!-- CHECK -->
+              <div class="col-12">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="gridCheck">
+                  <label class="form-check-label" for="gridCheck">
+                    Estoy de acuerdo con los terminos y condiciones de uso de los laboratorios.
+                  </label>
+                </div>
+              </div>
+
+                <!-- SUBMIT -->
+              <div class="col-12">
+                <a href="#">
+                  <button class="btn btn-primary" style="font-size: 20px;">Reservar</button>
+                </a>
+              </div>
+            </form>
           </div>
-        <br>
-        <br>
-        <br>
-        <div class="formulario">
-        <form class="row g-3">
+        </div>
 
-            <!-- NOMBRE Y APELLIDO -->
-            <div class="input-group">
-              <span class="input-group-text" style="font-size: 20px;">Nombre y Apellido</span>
-              <input type="text" aria-label="First name" class="form-control">
-              <input type="text" aria-label="Last name" class="form-control">
-            </div>
-
-            <!--FECHA DE INICIO-->
-            <div class="col-6">
-              <label for="start" class="form-label" style="font-size: 20px"> Fecha de Inicio</label>
-              <input type="date" class="form-control" id="start" value="2022-07-22" min="2022-07-10" max="2023-01-31">
-            </div>
-
-            <!-- ACTIVIDAD -->
-          <div class="col-6">
-            <label for="inputActividad" class="form-label" style="font-size: 20px">Actividad</label>
-            <input type="text" class="form-control" id="inputActividad" placeholder="">
-          </div>
-
-            <!-- FECHA DE FINALIZACION -->
-          <div class="col-6">
-            <label for="start" class="form-label" style="font-size: 20px"> Fecha de Finalización</label>
-            <input type="date" class="form-control" id="start" value="2022-07-22" min="2022-07-10" max="2023-01-31">
-          </div>
-
-            <!-- RESPONSABLE -->
-          <div class="col-6">
-            <label for="inputActividad" class="form-label" style="font-size: 20px">Responsable</label>
-            <input type="text" class="form-control" id="inputActividad" placeholder="">
-          </div>
-
-            <!-- TIPO DE RESERVA -->
-            <div class="col-6">
-              <label for="inputState" class="form-label" style="font-size: 20px">Tipo de Reserva</label>
-              <select id="inputState" class="form-select">
-                <option selected>Externa</option>
-                <option>Interna</option>
-              </select>
-            </div>
-
-            <!-- PARTICIPANTES -->
-          <div class="col-auto">
-            <label for="inputState" class="form-label" style="font-size: 20px">Participantes</label>
-            <select id="inputState" class="form-select">
-              <option selected>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
-              <option>6</option>
-              <option>7</option>
-              <option>8</option>
-              <option>9</option>
-              <option>10</option>
-            </select>
-          </div>
-
-            <!-- OBSERVACIONES -->
-          <div class="form-floating">
-            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
-            <label for="floatingTextarea">Observaciones</label>
-          </div>
-
-            <!-- CHECK -->
-          <div class="col-12">
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" id="gridCheck">
-              <label class="form-check-label" for="gridCheck">
-                Estoy de acuerdo con los terminos y condiciones de uso de los laboratorios.
-              </label>
-            </div>
-          </div>
-
-            <!-- SUBMIT -->
-          <div class="col-12">
-            <a href="#">
-              <button class="btn btn-primary" style="font-size: 20px;">Reservar</button>
-            </a>
-          </div>
-        </form>
-      </div>
-    </div>
+  </div>
+</div>

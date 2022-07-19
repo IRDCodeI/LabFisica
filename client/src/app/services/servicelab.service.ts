@@ -10,13 +10,13 @@ export class ServicelabService {
   service: Service;
   services: Service[] = [];
 
-  readonly URL_API = 'http://localhost:3000/api/users/services';
+  readonly URL_API = 'http://localhost:3000/api/lab/service';
 
   constructor(private http: HttpClient) {
     this.service = new Service();
   }
 
-  getServices(){
+  getServices() {
     return this.http.get(this.URL_API);
   }
 }

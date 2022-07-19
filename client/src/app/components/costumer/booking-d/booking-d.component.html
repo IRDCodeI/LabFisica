@@ -1,0 +1,143 @@
+<app-navdash></app-navdash>
+<div class="flex w-screen">
+  <app-dashmenu></app-dashmenu>
+  <div class="w-full">
+    <div class="px-6 py-12 md:px-12 bg-gray-100 text-gray-800 lg:text-left">
+      <div class="container mx-auto xl:px-32">
+        <div class="grid lg:grid-cols-2 gap-12">
+          <div class="mt-12 lg:mt-0">
+
+            <h1 class="titulo1">Reservaciones de Equipos</h1>
+
+
+            <br>
+            <br>
+              <div class="btn-group">
+                <a href="#" class="btn btn-primary" aria-current="page">Reserva de laboratorios</a>
+                <a href="#" class="btn btn-primary active">Reserva de Equipos</a>
+              </div>
+            <br>
+            <br>
+            <br>
+            <div class="formulario">
+            <form class="row g-3">
+
+                <!-- NOMBRE Y APELLIDO -->
+                <div class="input-group">
+                  <span class="input-group-text" style="font-size: 20px;">Nombre y Apellido</span>
+                  <input type="text" aria-label="First name" class="form-control">
+                  <input type="text" aria-label="Last name" class="form-control">
+                </div>
+
+                <!-- CEDULA -->
+              <div class="col-6">
+                <label for="inputActividad" class="form-label" style="font-size: 20px">Cédula</label>
+                <input type="text" class="form-control" id="inputActividad" placeholder="0123456789">
+              </div>
+
+                <!-- CARRERA -->
+                <div class="col-6">
+                  <label for="inputState" class="form-label" style="font-size: 20px">Carrera</label>
+                  <select id="inputState" class="form-select">
+                    <option selected>Computación</option>
+                    <option>Ing. Civil</option>
+                    <option>Ing.</option>
+                    <option>Ing.</option>
+                    <option>Ing.</option>
+                  </select>
+                </div>
+
+                <!-- SEMESTRE -->
+                <div class="col-6">
+                  <label for="inputSemestre" class="form-label" style="font-size: 20px">Semestre</label>
+                  <select id="inputSemestre" class="form-select">
+                    <option selected>Primer Semestre</option>
+                    <option>Segundo Semestre</option>
+                    <option>Tercer Semestre</option>
+                    <option>Cuarto Semestre</option>
+                    <option>Quinto Semestre</option>
+                    <option>Sexto Semestre</option>
+                    <option>Séptimo Semestre</option>
+                    <option>Octavo Semestre</option>
+                  </select>
+                </div>
+
+                <!-- EQUIPOS -->
+              <div class="col-6">
+                <label for="inputEquipos" class="form-label" style="font-size: 20px">Equipos</label>
+                <select id="inputEquipos" class="form-select">
+                  <option selected>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                  <option>6</option>
+                  <option>7</option>
+                  <option>8</option>
+                  <option>9</option>
+                  <option>10</option>
+                </select>
+              </div>
+
+                <!-- OBSERVACIONES -->
+              <div class="form-floating">
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                <label for="floatingTextarea">Observaciones</label>
+              </div>
+
+                <!-- CHECK -->
+              <div class="col-12">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="gridCheck">
+                  <label class="form-check-label" for="gridCheck">
+                    Estoy de acuerdo con los terminos y condiciones de uso de los equipos.
+                  </label>
+                </div>
+              </div>
+
+                <!-- SUBMIT -->
+              <div class="col-12">
+                <a href="#">
+                  <button class="btn btn-primary" style="font-size: 20px;">Reservar</button>
+                </a>
+              </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+                <!-- TOTAL DE EQUIPOS -->
+
+                <h1 class="titulo1">Resúmen:</h1>
+
+              <div class="col-6">
+                <b><label for="inputActividad" class="form-label" style="font-size: 20px">Total de Equipos</label></b>
+                <br>
+                <label for="inputActividad" class="form-label" style="font-size: 20px">num</label>
+              </div>
+
+              <div class="col-6">
+                <b><label for="inputActividad" class="form-label" style="font-size: 20px">Equipos Ocupados</label></b>
+                <br>
+                <label for="inputActividad" class="form-label" style="font-size: 20px">num</label>
+              </div>
+
+
+              <div class="col-6">
+                <b><label for="inputActividad" class="form-label" style="font-size: 20px">Equipos Disponibles</label></b>
+                <br>
+                <label for="inputActividad" class="form-label" style="font-size: 20px">num</label>
+              </div>
+
+            </form>
+
+          </div>
+          </div>
+
+  </div>
+</div>
+
+
