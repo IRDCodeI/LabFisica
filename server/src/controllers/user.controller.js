@@ -9,7 +9,7 @@ userController.getUsers = async (req, res) => {
 };
 
 userController.registerUser = async (req, res) => {
-    const user = new User();
+    const user = new User(req.body);
     user.email = req.body.email;
     user.password = req.body.password;
 

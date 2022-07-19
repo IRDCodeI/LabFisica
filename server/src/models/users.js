@@ -23,7 +23,7 @@ const userSchema = new Schema(
             type: String,
             required: true
         },
-        class:{
+        typeUser:{
             type: String,
             required: true
         }

@@ -17,7 +17,7 @@ const serviceSchema = new Schema(
 module.exports = model('Service', serviceSchema);
 
 /*
-{
+    {
         "type":"Prestamos de Libros",
         "scope":"Cliente",
         "subject":"Quimica, Fisica, Matematicas",
