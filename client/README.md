@@ -19,13 +19,13 @@
 ### Requerimientos Especificos: 
 
 1. Crear una aplicación web que solucione el problema planteado
-2. La aplicación web debe contar con tres usuarios: invitado, cliente y administrador
+2. La aplicación web debe contar con tres usuarios: invitado, cliente y administrador :large_blue_diamond:
 3. El usuario invitado puede revisar información sobre la empresa y registrarse en el sitio web para convertirse en cliente.:white_check_mark:
 4. Para ingresar al entorno privado del sitio web los usuarios registrados deben logearse en el sistema y contar con un usuario y clave establecidos.  La clave debe contar con mínimo 6 caracteres entre letras y números.  Y el usuario debe ser una cuenta de correo que exista. :large_blue_diamond:
-5. El usuario administrador puede gestionar la información de la aplicación web:  registrar, actualiza, eliminar, consultar servicios.  Obtener 2 reportes sobre la información almacenada. Los reportes deben estar en PDF y deben descargarse. :x:
+5. El usuario administrador puede gestionar la información de la aplicación web:  registrar, actualiza, eliminar, consultar servicios.  Obtener 2 reportes sobre la información almacenada. Los reportes deben estar en PDF y deben descargarse. :large_blue_diamond:
 6. El usuario cliente interactúa con la aplicación realizando una reserva, listado de reservas o calificación de un evento o webinar. :x:
-7. El cliente puede actualizar sus datos incluida su contraseña. :large_blue_diamond:
-8. El invitado puede revisar los servicios que ofrece la aplicación web. :large_blue_diamond:
+7. El cliente puede actualizar sus datos incluida su contraseña. :white_check_mark:
+8. El invitado puede revisar los servicios que ofrece la aplicación web. :white_check_mark:
 9. Las notificaciones que se envía al cliente deben llegar al correo registrado. :x:
 
 
@@ -44,7 +44,7 @@
 
      - Modelo BD     0.5  :white_check_mark:
      - Diagrama componentes   1 :large_blue_diamond: "Mejorar Diagrama - Implementar MVC"
-     - Logeo como usuario cliente     1 :large_blue_diamond: "Mejorar Seguridad - Implementar encriptacion"
+     - Logeo como usuario cliente     1 :white_check_mark: 
      - Actualización de datos  1  :white_check_mark:
      - Consulta de todos los servicios   0.5  :white_check_mark:
       
@@ -57,8 +57,8 @@
      - Inscripción, reserva de laboratorio, registro de viaje, registro en proyecto o en investigación, etc.  0.5 :x:
      - Cambiar clave 0.5  :white_check_mark:
      - Logeo al sistema como administrador 0.5 :x:
-     - Registro de un nuevo servicio 0.5  :x:
-     - Eliminación de un servicio 0.5 :x:
+     - Registro de un nuevo servicio 0.5  :white_check_mark:
+     - Eliminación de un servicio 0.5 :white_check_mark:
      - Cerrar sesión 0.5 :white_check_mark:
       
       
