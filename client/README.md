@@ -56,7 +56,7 @@
      - Logeo al sistema como cliente  0.5 :white_check_mark:
      - Inscripción, reserva de laboratorio, registro de viaje, registro en proyecto o en investigación, etc.  0.5 :x:
      - Cambiar clave 0.5  :white_check_mark:
-     - Logeo al sistema como administrador 0.5 :x:
+     - Logeo al sistema como administrador 0.5 :white_check_mark:
      - Registro de un nuevo servicio 0.5  :white_check_mark:
      - Eliminación de un servicio 0.5 :white_check_mark:
      - Cerrar sesión 0.5 :white_check_mark:
