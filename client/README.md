@@ -19,7 +19,7 @@
 ### Requerimientos Especificos: 
 
 1. Crear una aplicación web que solucione el problema planteado
-2. La aplicación web debe contar con tres usuarios: invitado, cliente y administrador
+2. La aplicación web debe contar con tres usuarios: invitado, cliente y administrador :large_blue_diamond:
 3. El usuario invitado puede revisar información sobre la empresa y registrarse en el sitio web para convertirse en cliente.:white_check_mark:
 4. Para ingresar al entorno privado del sitio web los usuarios registrados deben logearse en el sistema y contar con un usuario y clave establecidos.  La clave debe contar con mínimo 6 caracteres entre letras y números.  Y el usuario debe ser una cuenta de correo que exista. :large_blue_diamond:
 5. El usuario administrador puede gestionar la información de la aplicación web:  registrar, actualiza, eliminar, consultar servicios.  Obtener 2 reportes sobre la información almacenada. Los reportes deben estar en PDF y deben descargarse. :large_blue_diamond:
