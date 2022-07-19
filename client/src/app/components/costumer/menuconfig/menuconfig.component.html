@@ -7,9 +7,9 @@
       <hr>
       <form class="mt-2" #updateUserForm="ngForm" (ngSubmit)="updateUser()">
         <label class="text-lg font-semibold">Nombres</label>
-        <input type="text" name="name" disabled
+        <input type="text" name="name"
+          [(ngModel)]="user.name"
             class="form-control
-            disabled:opacity-75
             block
             w-full
             px-3
@@ -25,9 +25,9 @@
             my-4
             focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" placeholder="Nombres">
             <label class="text-lg font-semibold">Apellidos</label>
-            <input type="text" name="lastname" disabled
+            <input type="text" name="lastname"
+              [(ngModel)]="user.lastname"
                 class="form-control
-                disabled:opacity-75
                 block
                 w-full
                 px-3
@@ -43,9 +43,9 @@
                 my-4
                 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" placeholder="Apellidos">
             <label class="text-lg font-semibold">Usuario </label>
-            <input type="text" name="user" disabled
+            <input type="text" name="user"
+              [(ngModel)]="user.username"
                 class="form-control
-                disabled:opacity-75
                 block
                 w-full
                 px-3

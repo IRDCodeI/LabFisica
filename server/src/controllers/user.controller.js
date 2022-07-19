@@ -32,7 +32,7 @@ userController.loginUser = async (req, res) => {
     const hashSave = user.password;
     const verify = bycript.compareSync(password, hashSave);
 
-    if (verify) return res.status(401).send("Clave Erronea");
+    if (!verify) return res.status(401).send("Clave Erronea");
 
     const token = jwt.sign({ _id: user._id }, "secret");
     res.status(200).json({ token });
@@ -45,6 +45,11 @@ userController.getDash = async (req, res) => {
 userController.updateUser = async (req, res) => {
     const { email, password } = req.body;
     const user = req.body;
+
+    let salt = bycript.genSaltSync(8);
+    let hash = bycript.hashSync(user.password, salt);
+
+    user.password = hash;
 
     const getUser = await User.findOne({ email });
     await User.findByIdAndUpdate(

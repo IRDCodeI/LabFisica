@@ -21,7 +21,7 @@ router.get('/user/dashboard', verifyToken, user.getDash)
 router.get('/service', service.getServices);
 router.post('/service/post', service.setServices);
 router.put('/service/put', service.updateService);
-router.delete('/service/delete', service.deleteService);
+router.delete('/service/delete/:id', service.deleteService);
 
 //?Rutas de accion Reservas
 

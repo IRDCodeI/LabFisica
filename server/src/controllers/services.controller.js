@@ -32,9 +32,9 @@ serviceController.updateService = async(req, res) => {
 };
 
 serviceController.deleteService = async(req, res) => {
-    const getService = await service.findOne({type: req.body.type});
+    const {id} = req.params;
 
-    await service.findByIdAndDelete({_id:getService._id});
+    await service.findByIdAndDelete({_id: id});
 
     res.status(200).json('status: Servicio Eliminado');
 };

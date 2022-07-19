@@ -1,6 +1,7 @@
 export class Service {
 
-  constructor(type = '', scope = '', subject = '', desc = '', urlimg = ''){
+  constructor(_id = "", type = '', scope = '', subject = '', desc = '', urlimg = ''){
+    this._id=_id;
     this.type = type;
     this.scope = scope;
     this.subject = subject;
@@ -8,6 +9,7 @@ export class Service {
     this.urlimg = urlimg;
   }
 
+  _id: String;
   type: String;
   scope: String;
   subject: String;
