@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { ServiceconfigComponent } from '../components/admin/serviceconfig/serviceconfig.component';
 import { BookingDComponent } from '../components/costumer/booking-d/booking-d.component';
 import { BookingComponent } from '../components/costumer/booking/booking.component';
 import { FindservicesComponent } from '../components/costumer/findservices/findservices.component';
@@ -18,7 +19,8 @@ const router:Routes = [
   {path: 'services', component: ServicesComponent},
   {path: 'dashboard/lab-reservation', component:BookingComponent},
   {path: 'dashboard/device-reservation', component:BookingDComponent},
-  {path: 'dashboard/configuration', component:MenuconfigComponent}
+  {path: 'dashboard/configuration', component:MenuconfigComponent},
+  {path: 'dashboard/admin-services', component:ServiceconfigComponent}
 ];
 
 @NgModule({
